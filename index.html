@@ -98,13 +98,14 @@
     </style>
 
 <style>:root{font-synthesis-weight:none}</style>
+<style>.hero{overflow:hidden}</style>
 </head>
 <body>
 <header class="hero">
     <div class="series-label">LLM Hub &mdash; Modern Architectures</div>
     <h1>Modern <span class="accent">Architectures</span></h1>
-    <p class="subtitle">Architectures beyond the vanilla decoder &mdash; Mixture-of-Experts, Mamba and state-space models, long-context techniques, diffusion language models, hybrids &mdash; plus a five-deck companion to Sebastian Raschka&rsquo;s <em>Beyond Standard LLMs</em>.</p>
-    <div class="tags"><span class="tag">MoE</span><span class="tag">Mamba</span><span class="tag">SSM</span><span class="tag">Long Context</span><span class="tag">Diffusion</span><span class="tag">Jamba</span><span class="tag">Raschka Companion</span></div>
+    <p class="subtitle">Architectures beyond the vanilla decoder &mdash; Mixture-of-Experts, Mamba and state-space models, long-context techniques, diffusion language models, hybrids, encoder-only prefill &mdash; plus a five-deck companion to Sebastian Raschka&rsquo;s <em>Beyond Standard LLMs</em>.</p>
+    <div class="tags"><span class="tag">MoE</span><span class="tag">Mamba</span><span class="tag">SSM</span><span class="tag">Long Context</span><span class="tag">Diffusion</span><span class="tag">Jamba</span><span class="tag">CED</span><span class="tag">Raschka Companion</span></div>
 </header>
 <main class="container">
     <h2>Foundations &mdash; Architectures Beyond the Vanilla Decoder</h2>
@@ -114,11 +115,12 @@
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Arch_03_Long_Context/">Long-Context Techniques &rarr;</a><div class="desc">RoPE, position interpolation, NTK-aware, YaRN, ALiBi, sliding window + sink tokens (StreamingLLM), ring attention, context parallelism.</div><div class="meta"><span class="badge live">live</span></div></div></li>
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Arch_04_Diffusion_LMs/">Diffusion Language Models &rarr;</a><div class="desc">SEDD score-based discrete diffusion, LLaDA masking, mask-prediction schedules, parallel decoding trade-offs, where diffusion may win for code &amp; structured outputs.</div><div class="meta"><span class="badge live">live</span></div></div></li>
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Arch_05_Hybrid_and_Encoder_Decoder/">Hybrid &amp; Encoder-Decoder &rarr;</a><div class="desc">Jamba, Zamba; T5 / FLAN-T5; when encoder-decoder beats decoder-only; byte-level (ByT5); architecture-selection decision tree.</div><div class="meta"><span class="badge live">live</span></div></div></li>
+<li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Arch_06_Asymmetric_Causal_Encoder_Decoder/">Asymmetric Causal Encoder-Decoder &rarr;</a><div class="desc">DeepSeek-V4.1-Flash&rsquo;s Causal Encoder-Decoder: prefill runs only the causal encoder (8B vs 16B active); decoder KV projected from the last encoder state; the 128-token replay; KV-cache arithmetic; asymmetric prefill/decode pools, simulated; YOCO, CLA.</div><div class="meta"><span class="badge live">live</span></div></div></li>
     </ol>
 
     <h2 style="margin-top: 2.5rem;">Companion to Sebastian Raschka &mdash; <em>Beyond Standard LLMs</em></h2>
     <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">A five-deck companion to <a style="color: var(--accent); text-decoration: none;" href="https://magazine.sebastianraschka.com/p/beyond-standard-llms" target="_blank" rel="noopener">Raschka&rsquo;s essay</a>, unpacking the four post-transformer families &mdash; linear-attention hybrids, text diffusion, code world models, small recursive transformers &mdash; plus a decision-tree synthesis. Each deck has diagrams, technical detail, and an interactive widget. Read alongside the article.</p>
-    <ol class="deck-list" style="counter-reset: deck 5;">
+    <ol class="deck-list" style="counter-reset: deck 6;">
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Raschka_Beyond_LLMs_01_Linear_Attention_Hybrids/">Linear-Attention Hybrids &rarr;</a><div class="desc">MiniMax-M1, Qwen3-Next, DeepSeek V3.2, Kimi Linear; gated DeltaNet maths; the 3:1 hybrid pattern; the MiniMax-M2 reversal; interactive KV-cache calculator.</div><div class="meta"><span class="badge live">live</span></div></div></li>
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Raschka_Beyond_LLMs_02_Text_Diffusion/">Text Diffusion Models &rarr;</a><div class="desc">LLaDA, Gemini Diffusion; iterative denoising vs next-token; conditional-dependency limits; no-streaming and tool-use unknowns; interactive diffusion-vs-autoregressive token visualiser.</div><div class="meta"><span class="badge live">live</span></div></div></li>
 <li class="deck-card"><div class="num"></div><div class="body"><a class="deck-title" href="https://brendanjameslynskey.github.io/Raschka_Beyond_LLMs_03_Code_World_Models/">Code World Models &rarr;</a><div class="desc">CWM 32B; world-modelling mid-training; structured execution traces; SWE-bench parity at 4&times; smaller; interactive world-model rollout stepper with bug-injection.</div><div class="meta"><span class="badge live">live</span></div></div></li>
