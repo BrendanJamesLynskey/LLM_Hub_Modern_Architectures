@@ -29,6 +29,10 @@ A five-deck companion to [Sebastian Raschka's essay](https://magazine.sebastianr
 | 10 | [Small Recursive Transformers](https://brendanjameslynskey.github.io/Raschka_Beyond_LLMs_04_Small_Recursive_Transformers/) | live | HRM, TRM (7M params, &dollar;500 to train) &middot; ARC-AGI &middot; the attention-not-required ablation &middot; interactive recursive trace viewer on a 4&times;4 puzzle. |
 | 11 | [When to Reach for Non-Transformer](https://brendanjameslynskey.github.io/Raschka_Beyond_LLMs_05_Decision_Tree/) | live | Synthesis. Cost-vs-capability frontier &middot; why standard transformers are still the default &middot; composition (specialist as tool) &middot; interactive decision-tree walker for your own workload. |
 
+## Related
+
+**Related site:** [LLM Architectures Explained](https://llm-architectures-explained.vercel.app/) ([code](https://github.com/BrendanJamesLynskey/llm-architectures-explained)) is an interactive companion to this series: 160 models' architectures, every value sourced, a tested cost model behind a model table, diagrams, a compare view and a timeline, and nine chapters on the axes these decks cover (attention, positions, norms, MoE, depth and width, long context, multi-token prediction, looped and parallel blocks, encoder-decoder and the causal encoder-decoder of Arch 06, simulated live in the browser).
+
 ## Where this fits
 
 Part of the [LLMs hub](https://github.com/BrendanJamesLynskey/LLMs) &mdash; an index of presentation series for AI/LLM engineers.
