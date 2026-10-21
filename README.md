@@ -1,3 +1,7 @@
+<!-- portfolio-strip:start (brief 40) -->
+<sub>**Brendan Lynskey** · [Portfolio home](https://brendanjameslynskey.github.io/) · [Interactive sites](https://brendanjameslynskey.github.io/#sites)</sub>
+<!-- portfolio-strip:end -->
+
 # Modern Architectures
 
 Architectures beyond the vanilla decoder &mdash; Mixture-of-Experts, Mamba and state-space models, long-context techniques, diffusion language models, hybrids, encoder-only prefill &mdash; plus a five-deck companion to Sebastian Raschka's *Beyond Standard LLMs* surveying linear-attention hybrids, text diffusion, code world models, and small recursive transformers.
